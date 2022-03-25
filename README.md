@@ -1,2 +1,2 @@
 # CaesarCipherJava
-Encrypt, Decrypt, Bruteforce CaeserCipher
+Encrypt, Decrypt, Bruteforce Caeser Cipher
