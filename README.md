@@ -1,5 +1,6 @@
 # CaesarCipherJava
-Encrypt, Decrypt, Bruteforce Caeser Cipher
+
+- Deciphers/Ciphers Text by shifting the alphabet
 
 - [X] Encrypt
 - [X] Decrypt
