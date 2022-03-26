@@ -23,6 +23,10 @@ public class bruteForceGUI extends JFrame {
         area.setBounds(70, 35, 625, 435);
     }
 
+    /**
+     * Gets the JTextArea
+     * @return JTextArea
+     */
     JTextArea getJTextArea()
     {
         return area;

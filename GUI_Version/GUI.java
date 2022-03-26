@@ -23,23 +23,41 @@ public class GUI extends JFrame implements ActionListener {
     private JButton copyButton;
 
 
+    /**
+     * Constructor
+     */
+
     public GUI() {
 
+        /*
+         * Text fields init
+         */
 
         inputField = new JTextField(5);
         outputField = new JTextField(5);
+        shiftBox = new JTextField(5);
+
+        /*
+         * Labels init
+         */
 
         mainLabel = new JLabel("CaesarCipher_Java");
         inputLabel = new JLabel("Input");
         outputLabel = new JLabel("Output");
         shiftLabel = new JLabel("Shift");
 
-        shiftBox = new JTextField(5);
+        /*
+         * Buttons init
+         */
 
         bruteForceButton = new JToggleButton("BruteForce", false);
         encryptButton = new JButton("Encrypt");
         decryptButton = new JButton("Decrypt");
         copyButton = new JButton ("Copy");
+
+        /*
+         * ActionListeners init
+         */
 
         bruteForceButton.addActionListener(this);
         bruteForceButton.setActionCommand("bruteForce_click");
@@ -54,6 +72,9 @@ public class GUI extends JFrame implements ActionListener {
         copyButton.setActionCommand("copy_click");
 
 
+        /*
+         * Tooltips info
+         */
 
         inputField.setToolTipText("Input Text here");
         outputField.setEnabled(false);
@@ -64,12 +85,19 @@ public class GUI extends JFrame implements ActionListener {
         copyButton.setToolTipText ("Copies the Output");
 
 
+        /*
+         * JFrame settings
+         */
+
         setPreferredSize(new Dimension(672, 360));
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         pack();
         setVisible(true);
 
+        /*
+         * Adding attributes to JFrame
+         */
 
         add(mainLabel);
         add(inputField);
@@ -83,6 +111,10 @@ public class GUI extends JFrame implements ActionListener {
         add(decryptButton);
         add(copyButton);
 
+
+        /*
+         * Locations for attributes
+         */
 
         mainLabel.setBounds(260, -10, 145, 85);
         inputField.setBounds(5, 145, 315, 20);
@@ -105,6 +137,7 @@ public class GUI extends JFrame implements ActionListener {
      *
      * @param e the event to be processed
      */
+
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -114,10 +147,14 @@ public class GUI extends JFrame implements ActionListener {
                 outputField.setText(encryptedText);
             }
 
+
+
             case "decrypt_click" -> {
                 String decryptedText = decrypt(inputField.getText(), Integer.parseInt(shiftBox.getText()));
                 outputField.setText(decryptedText);
             }
+
+
 
             case "bruteForce_click" -> {
                 if (bruteForceButton.isSelected()) {
@@ -132,6 +169,8 @@ public class GUI extends JFrame implements ActionListener {
                 JtextArea.setText(bruteForce(inputField.getText()));
             }
 
+
+
             case "copy_click" -> {
                 StringSelection stringSelection = new StringSelection(outputField.getText());
                 Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -140,6 +179,13 @@ public class GUI extends JFrame implements ActionListener {
         }
     }
 
+
+    /**
+     * Encrypt alphabet characters by shifting
+     * @param text The text you want to encrypt
+     * @param shift The amount of shift in characters
+     * @return Encrypted text in String
+     */
 
     public String encrypt(String text, int shift)
     {
@@ -153,6 +199,14 @@ public class GUI extends JFrame implements ActionListener {
         return encryptedText.toString();
     }
 
+
+    /**
+     * Decrypt already encrypted characters by shifting
+     * @param text Encrypted text
+     * @param shift The amount of shift in characters
+     * @return Decrypted text in String
+     */
+
     public String decrypt(String text, int shift)
     {
         char[] chars = text.toCharArray();
@@ -165,6 +219,13 @@ public class GUI extends JFrame implements ActionListener {
         return decryptedText.toString();
     }
 
+
+    /**
+     * If you want to take the lazy route, you can brute force it
+     * @param text Encrypted text
+     * @return 26 possibilities of decryption
+     */
+    
     public String bruteForce(String text)
     {
         int letters = 26;
