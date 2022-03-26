@@ -10,17 +10,19 @@ import javax.swing.*;
 
 public class GUI extends JFrame implements ActionListener {
 
-    private JLabel mainLabel;
     private JTextField inputField;
     private JTextField outputField;
+    private JTextField shiftBox;
+    private JLabel mainLabel;
     private JLabel inputLabel;
     private JLabel outputLabel;
-    private JTextField shiftBox;
     private JLabel shiftLabel;
+    private JLabel copyright;
     private JToggleButton bruteForceButton;
     private JButton encryptButton;
     private JButton decryptButton;
     private JButton copyButton;
+
 
 
     /**
@@ -45,6 +47,7 @@ public class GUI extends JFrame implements ActionListener {
         inputLabel = new JLabel("Input");
         outputLabel = new JLabel("Output");
         shiftLabel = new JLabel("Shift");
+        copyright = new JLabel("Copyright James-COMMANDO ©");
 
         /*
          * Buttons init
@@ -110,6 +113,7 @@ public class GUI extends JFrame implements ActionListener {
         add(encryptButton);
         add(decryptButton);
         add(copyButton);
+        add(copyright);
 
 
         /*
@@ -127,6 +131,7 @@ public class GUI extends JFrame implements ActionListener {
         encryptButton.setBounds(430, 110, 100, 25);
         decryptButton.setBounds(430, 155, 100, 25);
         copyButton.setBounds(100, 220, 100, 25);
+        copyright.setBounds(470, 300, 185, 25);
     }
 
 
@@ -225,7 +230,7 @@ public class GUI extends JFrame implements ActionListener {
      * @param text Encrypted text
      * @return 26 possibilities of decryption
      */
-    
+
     public String bruteForce(String text)
     {
         int letters = 26;
