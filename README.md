@@ -53,8 +53,7 @@
  Pretty cool right?
  
  
- 
-3. Bruteforce
+ 3. Bruteforce
   - We can take the lazy route and bruteforce it, we will take the same example from the decrypt
  ```java
   CaesarCipher cipher = new CaesarCipher(); // Create an Object of the class
