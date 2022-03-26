@@ -28,7 +28,5 @@
  * param shift Amount of alphabet shift
  */
  cipher.encrypt("I don't want to see you!", 1); 
- 
- Output: J!epo(u!xbou!up!tff!zpv"
  ```
 
