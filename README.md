@@ -68,37 +68,7 @@ We can take the lazy route and bruteforce it, we will take the same example from
  
  Output: 
 "I don't want to see you!
-Hcnm&sv`mssnrddxnt 
-Gbml%ru_lrrmqccwms
-Falk$qt^kqqlpbbvlr
-E`kj#ps]jppkoaaukq
-D_ji"or\ioojn``tjp
-C^ih!nq[hnnim__sio
-B]hg mpZgmmhl^^rhn
-A\gfloYfllgk]]qgm
-@[feknXekkfj\\pfl
-?ZedjmWdjjei[[oek
->YdcilVciidhZZndj
-=XcbhkUbhhcgYYmci
-<WbagjTaggbfXXlbh
-;Va`fiS`ffaeWWkag
-:U`_ehR_ee`dVVj`f
-9T_^dgQ^dd_cUUi_e
-8S^]cfP]cc^bTTh^d
-7R]\beO\bb]aSSg]c
-f\b
-5P[Z`cMZ``[_QQe[a
-4OZY_bLY__Z^PPdZ`
-3
-NYX^
-aKX^
-^Y
-]OO
-cY_
-2	MXW]	`JW]	]X	\NN	bX^
-
-LWV_IV\[MaW]	
-0KVU[^HU[[VZLL`V
+ and a bunch of other jumbeled text
 "
 
 
