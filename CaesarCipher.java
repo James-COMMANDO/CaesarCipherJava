@@ -1,4 +1,6 @@
-public class CaeserShifter {
+package GitVersion.CaesarCipherJava;
+
+public class CaesarCipher {
   
   /*
   * Written by James
@@ -15,19 +17,16 @@ public class CaeserShifter {
     public void encrypt(String text, int shift)
     {
         char[] chars = text.toCharArray();
-        StringBuilder a = new StringBuilder();
 
         for (char characters : chars)
         {
             characters += shift;
-            a.append(characters);
+            System.out.print(characters);
         }
-
-        System.out.println(a);
     }
 
 
-    
+
     /**
      * Decrypt already encrypted characters by shifting
      * @param text Encrypted text
@@ -37,14 +36,12 @@ public class CaeserShifter {
     public void decrypt(String text, int shift)
     {
         char[] chars = text.toCharArray();
-        StringBuilder a = new StringBuilder();
 
         for (char characters : chars)
         {
             characters -= shift;
-            a.append(characters);
+            System.out.print(characters);
         }
-        System.out.println(a);
     }
 
 
@@ -61,7 +58,10 @@ public class CaeserShifter {
         for(int i = 1; i <= letters; i++)
         {
             decrypt(text, i);
+            System.out.println("");
         }
     }
+
+
 
 }
