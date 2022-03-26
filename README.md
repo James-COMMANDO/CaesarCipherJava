@@ -18,3 +18,15 @@
 
 # Console Programme
 
+- Encrypt
+
+```java
+ CaesarCipher cipher = new CaesarCipher(); // Does not require any Parameters
+ 
+ /**
+ * param text Text that you want to encrypt
+ * param shift Amount of alphabet shift
+ */
+ cipher.encrypt("I don't want to see you!", 1); 
+ ```
+
