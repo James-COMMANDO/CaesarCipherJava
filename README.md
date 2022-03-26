@@ -18,7 +18,7 @@
 
 # Console Programme
 
-- Encrypt
+1.Encrypt
  -let's write a message that is encrypted so no one can see it!
 
 ```java
