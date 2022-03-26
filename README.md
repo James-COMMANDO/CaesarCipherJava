@@ -19,7 +19,7 @@
 # Console Programme
 
 - Encrypt
-let's write a message that is encrypted so no one can see it!
+ -let's write a message that is encrypted so no one can see it!
 
 ```java
  CaesarCipher cipher = new CaesarCipher(); // Create an Object of the class
