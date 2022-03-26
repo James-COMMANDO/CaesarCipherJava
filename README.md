@@ -36,8 +36,8 @@
  
  
  
- - Decrypt
- Now lets try to decrypt this 'J!epo(u!xbou!up!tff!zpv"' with our tool!
+1.Decrypt
+  - Now lets try to decrypt this 'J!epo(u!xbou!up!tff!zpv"' with our tool!
  ```java
   CaesarCipher cipher = new CaesarCipher(); // Create an Object of the class
   
@@ -54,8 +54,8 @@
  
  
  
- - Bruteforce
-We can take the lazy route and bruteforce it, we will take the same example from the decrypt
+3. Bruteforce
+  - We can take the lazy route and bruteforce it, we will take the same example from the decrypt
  ```java
   CaesarCipher cipher = new CaesarCipher(); // Create an Object of the class
   
